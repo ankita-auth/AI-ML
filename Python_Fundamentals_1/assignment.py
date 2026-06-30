@@ -53,13 +53,13 @@
 # print("Area=",(3.14*r**2))
 
 # #Q9
-# p=float(input("Enetr Principal"))
+# p=float(input("EntEr Principal"))
 # r=float(input("Enter Rate"))
-# t=float(input("Enetr time"))
+# t=float(input("EntEr time"))
 # SI=(p*r*t)/100
 # print(SI)
 
-#Q10
-a=float(input("Enter a decimal no."))
-print("Integer Part=",int(a))
-print("fractional Part=",(a-int(a)))
+# #Q10
+# a=float(input("Enter a decimal no."))
+# print("Integer Part=",int(a))
+# print("fractional Part=",(a-int(a)))
