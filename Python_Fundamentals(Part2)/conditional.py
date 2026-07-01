@@ -27,7 +27,7 @@
 #     print("Adult")
 
 # --------------------X-------------------------------
-# username=input("ENter Username:")
+# username=input("Enter Username:")
 # pwd=input("enter pwd")
 # if username=="admin" and pwd=="pass":
 #     print("Login Succesfull")
@@ -37,8 +37,14 @@
 #     print("Wrong Password")
 
 #-------------------X----------------------------------
-n=int(input("Entera number"))
-if (n%5==0):
-    print("Multiple of 5")
+# n=int(input("Enter a number"))
+# if (n%5==0):
+#     print("Multiple of 5")
+# else:
+#     print("Not a multiple of 5")
+# ----------------------X--------------------------------
+n=int(input("Enter a number"))
+if (n%2==0):
+    print("Even")
 else:
-    print("Not a multiple of 5")
+    print("Odd")
