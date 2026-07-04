@@ -21,9 +21,11 @@
 
 #Q3
 m=int(input("Enter a number: "))
-s=""
-while m!=0:
-    s+=str(m%10)
-    m//=10
-for i in s:
-    print(i)
+def fun(m):
+    s=""
+    while m!=0:
+        s+=str(m%10)
+        m//=10
+    for i in range(len(s)-1,-1,-1):
+        print(s[i]) 
+fun(m)
