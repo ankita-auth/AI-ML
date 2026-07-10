@@ -1,5 +1,5 @@
 # #Q1
-# salary=int(input("Enter your Salary:"))
+# salary=float(input("Enter your Salary:"))
 # if salary<30000:
 #     tax=0.05*salary
 # elif salary<=70000:
@@ -69,24 +69,24 @@
 
 ##Q8
 
-def calculator(a,b,operation):
-    match operation:
-        case '+':
-            return a+b
-        case '-':
-            return a-b
-        case '*':
-            return a*b
-        case '/':
-            return a/b
-        case _:
-            return "Invalid value"
+# def calculator(a,b,operation):
+#     match operation:
+#         case '+':
+#             return a+b
+#         case '-':
+#             return a-b
+#         case '*':
+#             return a*b
+#         case '/':
+#             return a/b
+#         case _:
+#             return "Invalid value"
  
 
-a=int(input("Enter a:"))
-b=int(input("Enter b:"))
-operator=input("Enter operator:")
-print(calculator(a,b,operator))
+# a=int(input("Enter a:"))
+# b=int(input("Enter b:"))
+# operator=input("Enter operator:")
+# print(calculator(a,b,operator))
 
 # ##Q9
 # def prime(n):
@@ -97,9 +97,7 @@ print(calculator(a,b,operator))
 #     for i in range(2,n):
 #         if(n%i==0):
 #             return False
-#             break
-#         else:
-#             return True
+#     return True
 # n=int(input("Enter n:"))
 # print(prime(n))
 
