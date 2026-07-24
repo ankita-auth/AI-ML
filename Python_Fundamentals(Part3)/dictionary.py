@@ -1,23 +1,45 @@
 info={
     "name":"Ankita",
-    "cgpa":9.2,
-    "subjects":["maths","science"],
+   "cgpa":9.2,
+   "subjects":["maths","science"],
     3.14:"PI"
 }
-print(type(info))
-print(info["name"])
-print(info[3.14])
 
-info["cgpa"]=9.6
-print(info)
+# print(type(info))
+# print(info["name"])
+# print(info[3.14])
+# info["cgpa"]=9.6
+# print(info)
+#------------------------X--------------------------
+#*Method
+ 
+# *d.keys()
+# print(info.keys())
+# print(type(info.keys()))
+# dict_keys=list(info.keys())
+# print(dict_keys)
 
-print(info.keys())
+#*d.values()
+# dict_values=list(info.values())
+# print(dict_values)
+# print(type(dict_values))
 
-print(type(info.keys()))
+#*d.items()
+# print(info.items())
+# print(type(info.items()))
+for key,values in info.items():
+    print(key,values)
 
-dict_keys=list(info.keys())
-print(dict_keys)
+#*d.get(val)
+#print(info["cgpa2"])
+# print(info.get("cgpa2"))
+# print("end of code")
 
-dict_values=list(info.values())
-print(dict_values)
-print(type(dict_values))
+#*d.update(new_item)
+# info.update({
+#     "city":"delhi"
+# })
+# print(info)
+
+
+

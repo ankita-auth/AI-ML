@@ -10,20 +10,20 @@
 # m=[7,5,"abc",45]
 # print(type(m))
 
-# #slicing
+#* slicing
 # print(m[0:4])
 # print(m[0:])
 # print(m[-4:-2])
 
-# #append
+#* append
 # m.append(4)
 # print(m)
 
-# #insert
+#* insert
 # m.insert(2,100)
 # print(m)
 
-# #sort
+#* sort
 # n=[100,2,5,15]
 # n.sort()
 # print(n)
@@ -40,20 +40,20 @@
 
 #----------------------X------------------
 
-#Loops
+#*Loops
 # num=[100,2,5,15]
 # for val in num:
 #     print(val)
 
 
-#linear search
-l=[1,2,3,10,4]
-x=10
-i=0
-for val in l:
-    if val==x:
-        print(f"x found at index={i}")
-        break
-    i+=1
+#*linear search
+# l=[1,2,3,10,4]
+# x=10
+# i=0
+# for val in l:
+#     if val==x:
+#         print(f"x found at index={i}")
+#         break
+#     i+=1
 
         
