@@ -58,7 +58,7 @@
 
 #* Q5
 d={}
-c=input("Enter A,B,C,D:\nA-Add a Student\nB-Update Marks\nC-Search for a Student\nD-Display all Students and Marks\n")
+c=input("Enter A,B,C,D:\nA-Add a Student\nB-Update Marks\nC-Search for a Student\nD-Display all Students and Marks\n").upper()
 match c:
     case "A":
         n=input("Enter a student name:")
