@@ -27,7 +27,7 @@
 # avg=s/len(l)
 # print(avg)
 
-
+#HOLA
 #* Q3
 # n1=int(input("Enter length of first list"))
 # n2=int(input("Enter length of  second list"))
