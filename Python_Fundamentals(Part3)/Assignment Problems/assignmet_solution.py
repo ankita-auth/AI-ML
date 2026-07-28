@@ -131,14 +131,10 @@
 
 #* Q10
 # str=input("Enter a String")
-# dict={}
-# for i in str:
-#     if i not in dict:
-#         dict[i]=0
-#     else:
-#         dict[i]+=1    
-# print(dict.keys())
-# print(dict)
+# s=set(str)
+# l=len(s)
+# print(s)
+# print(l)
 
 
 
