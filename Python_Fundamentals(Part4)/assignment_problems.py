@@ -217,40 +217,48 @@
 
 
 #* 10
-class User:
-    Users=0
-    def __init__(self,user_name):
-        self.user_name=user_name
-        User.Users+=1
-    def __repr__(self):
-        return f"Username= {self.user_name}"
+from abc import ABC, abstractmethod
+class Message(ABC):
+    def __init__(self,message):
+        self.message = message
 
-class Message:
-    def __init__(self,text):
-        self.text=text
-    def showText(self):
-        print(self.text)
-    
+    @abstractmethod
+    def sending_message(self):
+        pass
 
-class ChatRoom(User,Message):
-    
-    def __init__(self, user_name):
-        User.__init__(self,user_name)
-    def NoOfUsers(cls):
-        return User.Users
-    def printText(self,text):
-        return Message.text
-u1=User("Jibitesh")
-u2=User("Lucky")
-m=Message("Hehe")
-c=ChatRoom("Jibitesh","Lucky")
-print(c.NoOfUsers())
-print(c.printText("Hehe"))
-
-
-
-
+class ChatRoom(ABC):
+    @abstractmethod
+    def user_join_leave(self):
+        pass
+    def chat_history(self):
+        pass
     
 
 
+class User(Message,ChatRoom):
+    list=[]
+    def __init__(self,name,message):
+        Message.__init__(self,message)
+        self.name = name
 
+    def sending_message(self):
+       print(f"{self.name}: {self.message}")
+       User.list.append(self.message)
+
+    def chat_history(self):
+        return User.list
+    
+    def user_join_leave(self,action):
+        print(f"{self.name} : {action}.")
+
+
+u1 = User("Jibitesh","hello Ankita!")
+u2 = User("Ankita","Hello Jibitesh!")
+u1.user_join_leave("joined")
+u2.user_join_leave("joined")
+
+u1.sending_message()
+u2.sending_message()
+
+print("\nChat History:")
+print(u1.chat_history())
