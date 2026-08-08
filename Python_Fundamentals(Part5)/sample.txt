@@ -1,4 +1,5 @@
-Old text which already
-exists in file.
+This is a demo file
+to store some words
+for the Python activity
+that is to be solved by us.
 
-New text being appended

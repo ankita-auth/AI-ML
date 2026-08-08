@@ -1,3 +1,5 @@
+
+#* Uses Pointer Concept
 #f=open("sample.txt","r")#file object
 #* Read Operations
 #data=f.read()
@@ -14,7 +16,7 @@
 
 #f.close() #we need to close it everytime we open a file
 #--------------------X-----------------------
-#* Default Read Mode
+#* Default (Read Mode)
 # f=open("sample.txt") #default-read file object
 # print(f.read())
 # f.close()
@@ -24,14 +26,41 @@
 # f.write("\nNew text being appended")
 # f.close()
 #--------------------X-----------------------
+#* New File Created
 # f=open("sample1.txt","a")
 # f.write("Some random text")
 # f.close()
 #--------------------X-----------------------
+#* New File Created
 # f=open("sample2.txt","w")
 # f.write("Some random text 1")
 # f.close()
 #--------------------X-----------------------
-#* Error
+#* X Mode(Throws Error)
 # f=open("smaple1.txt","x")
 # f.write("xyz")
+#--------------------X-----------------------
+#* + Mode
+#--------
+#* r+
+f=open("sample.txt","r+")
+f.write("123") #overwrite("old") at start of file as pointer is at start because of r+
+print(f.read())
+f.close()
+#* its read part prints as pointer is after write part.
+#-------------------
+#* a+
+f=open("sample.txt","a+")
+f.write("123")
+print(f.read())
+f.close()
+#* its read part prints as pointer is after end.
+#-------------------
+f = open("sample1.txt","r+")
+print(f.read())
+f.write("123")
+#------------------
+#*w+
+# f = open("sample2.txt","w+")
+# f.write("123")
+# print(f.read())
