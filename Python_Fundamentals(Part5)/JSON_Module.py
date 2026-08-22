@@ -45,7 +45,7 @@ d={
     "is Student":True
 }#this is python value
 with open("data.json","w") as f:
-    json.dump(d,f,indent=4,sort_keys=True)
+    json.dump(d,f,indent=4,sort_keys=True) #* 1st parameter should be python obj then file
   
 
 
