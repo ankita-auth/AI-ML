@@ -47,14 +47,12 @@ f=open("sample.txt","r+")
 f.write("123") #overwrite("old") at start of file as pointer is at start because of r+
 print(f.read())
 f.close()
-#* its read part prints as pointer is after write part.
 #-------------------
 #* a+
 f=open("sample.txt","a+")
 f.write("123")
 print(f.read())
 f.close()
-#* its read part prints as pointer is after end.
 #-------------------
 f = open("sample1.txt","r+")
 print(f.read())

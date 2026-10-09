@@ -86,7 +86,7 @@
 # dict={}
 # words=["apple","banana","kiwi","cherry","mango"]
 # for i in words:
-#     #dict.update({i:len(word)})
+#     #dict.update({i:len(i)})
 #     dict[i]=len(i)
 # print(dict)
 

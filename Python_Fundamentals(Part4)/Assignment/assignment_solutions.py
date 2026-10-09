@@ -126,7 +126,7 @@
    
 #* Q6
 # from abc import ABC,abstractmethod
-# class Employee:
+# class Employee(ABC):
 #     def __init__(self,name,id):
 #         self.name=name
 #         self.id=id
@@ -215,6 +215,10 @@
 # b.herbi()
 # b.carni()
 
+#*O/P:
+# (<class '__main__.Bear'>, <class '__main__.Herbivore'>, <class '__main__.Carnivore'>, <class '__main__.Omnivores'>, <class 'object'>)
+#moneyplant lion
+ 
 
 #* 10
 class Message:
