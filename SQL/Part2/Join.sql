@@ -34,3 +34,49 @@ SELECT * FROM customers c INNER JOIN orders o ON c.customer_id = o.customer_id;
 SELECT c.customer_id,o.order_id,c.name FROM customers c INNER JOIN orders o ON c.customer_id = o.customer_id;
 
 -- LEFT JOIN --
+SELECT *
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id=o.customer_id;
+
+-- RIGHT JOIN --
+SELECT * 
+FROM  customers c
+RIGHT JOIN orders o
+ON c.customer_id=o.customer_id;
+
+-- OUTER JOIN(UNION)  --
+SELECT *
+FROM customers c 
+LEFT JOIN orders o
+ON c.customer_id=o.customer_id
+UNION
+SELECT *
+FROM customers as c
+RIGHT JOIN orders as o
+ON c.customer_id=o.customer_id;
+
+-- CROSS JOIN --
+SELECT *
+FROM customers c
+CROSS JOIN orders o;
+
+-- SELF JOIN[Works on Same Table]  --
+SELECT *
+FROM customers c 
+JOIN customers d 
+ON c.customer_id=d.customer_id;
+
+-- LEFT EXCLUSIVE JOIN --
+SELECT * 
+FROM customers c
+LEFT JOIN orders o 
+ON c.customer_id=o.customer_id
+WHERE o.customer_id IS NULL;
+
+-- RIGHT EXCLUSIVE JOIN --
+SELECT * 
+FROM customers c
+RIGHT JOIN orders o 
+ON c.customer_id=o.customer_id
+WHERE c.customer_id IS NULL;
